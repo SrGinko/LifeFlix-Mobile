@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
     content: {
         flexDirection: 'column',
         padding: 10,
-        flexGrow: 1
+        flexGrow: 1,
     }
 
 })

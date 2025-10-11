@@ -20,6 +20,13 @@ export default function App() {
           <Card title='AMC' id='amc' url='https://redecanaistv.sh/player3/ch.php?canal=' image='https://cdn6.aptoide.com/imgs/1/1/a/11a5a8d4ea892d8bcbab71bcbc06c324_icon.png'/>
           <Card title='Animal Planet' id='animalplanet' url='https://redecanaistv.sh/player3/ch.php?canal=' image='https://image.roku.com/developer_channels/prod/ca376798a367c72387af6cb38a24ebd0a25680ba73b0f6739822aa5be6f40c64.png'/>
         </ContentContainer>
+        <ContentContainer title='Canais'>
+          <Card title='Cartoon Network' id='cartoon' url='https://redecanaistv.sh/player3/ch.php?canal=' image='https://static.wikia.nocookie.net/tvpediabrasil/images/2/28/Cartoonnet.jpg/revision/latest?cb=20180801233705&path-prefix=pt-br'/>
+          <Card title='A&E' id='aie' url='https://redecanaistv.sh/player3/ch.php?canal=' image='https://yt3.googleusercontent.com/8kJOjxBvuSB3wDZvB8ncO_HuGp2uSUrF8nHV-_x0ZN_aOyjygOFWleWSxmRfuvHQAH8fhpY4THk=s900-c-k-c0x00ffffff-no-rj'/>
+          <Card title='adult swim' id='adultswim' url='https://redecanaistv.sh/player3/ch.php?canal=' image='https://variety.com/wp-content/uploads/2014/02/adult-swim1.jpg'/>
+          <Card title='AMC' id='amc' url='https://redecanaistv.sh/player3/ch.php?canal=' image='https://cdn6.aptoide.com/imgs/1/1/a/11a5a8d4ea892d8bcbab71bcbc06c324_icon.png'/>
+          <Card title='Animal Planet' id='animalplanet' url='https://redecanaistv.sh/player3/ch.php?canal=' image='https://image.roku.com/developer_channels/prod/ca376798a367c72387af6cb38a24ebd0a25680ba73b0f6739822aa5be6f40c64.png'/>
+        </ContentContainer>
       </View>
     </View>
   );
@@ -45,7 +52,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   content:{
-    flex: 1,
     flexDirection: 'column',
     padding: 10,
     flexGrow:1

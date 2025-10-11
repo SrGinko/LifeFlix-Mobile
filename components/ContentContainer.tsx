@@ -26,7 +26,7 @@ export function ContentContainer({ title, children }: ContentContainerProps) {
 const styles = StyleSheet.create({
     contentContainer: {
         flexDirection: 'column',
-        flexGrow: 1
+        marginTop: 30
     },
 
     contentTitle: {
