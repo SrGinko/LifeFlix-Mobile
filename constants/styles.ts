@@ -3,19 +3,23 @@ import { Fonts, TextType } from './theme';
 
 export const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        backgroundColor: '#111',
+        width: '100%',
+        height: '100%',
+        backgroundColor: '#0e0e0e',
         padding: 0,
         paddingTop: 35,
+        color: '#fff'
     },
     header: {
-        height: 50,
+        height: 60,
         flexDirection: 'row',
-        backgroundColor: '#171717',
-        alignItems: 'center'
+        backgroundColor: '#0c0c0c',
+        alignItems: 'center',
+        borderBottomWidth: 0.6 ,
+        borderColor: '#5c5c5c'
     },
     titulo: {
-        fontSize: TextType.title.fontSize,
+        fontSize:TextType.title.fontSize,
         color: TextType.title.color,
         fontFamily: Fonts.sans,
         fontWeight: 'bold'
