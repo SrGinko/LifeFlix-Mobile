@@ -1,50 +1,47 @@
-# Welcome to your Expo app 👋
+# 📱 App Mobile de Canais, Filmes e Séries
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo mobile desenvolvido em **React Native (Expo)** com foco em estudos, simulando uma plataforma de streaming para listagem de canais, filmes e séries.
 
-## Get started
+Este projeto foi criado exclusivamente para fins educacionais.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🎯 Objetivo do projeto
 
-2. Start the app
+O objetivo principal deste app é praticar:
 
-   ```bash
-   npx expo start
-   ```
+- desenvolvimento mobile com React Native
+- consumo de APIs
+- organização de componentes
+- navegação entre telas
+- arquitetura de projeto
+- boas práticas de front-end mobile
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🧠 Funcionalidades
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- ✅ Listagem de canais
+- ✅ Listagem de filmes
+- ✅ Listagem de séries
+- ✅ Tela de detalhes
+- ✅ Organização por categorias
+- ✅ Consumo de API REST
+- ✅ Interface responsiva para dispositivos móveis
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 🛠️ Tecnologias utilizadas
 
-```bash
-npm run reset-project
-```
+- React Native
+- Expo
+- JavaScript / TypeScript
+- Axios
+- Expo Router / React Navigation
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 📂 Estrutura do projeto
 
-To learn more about developing your project with Expo, look at the following resources:
+Exemplo de estrutura:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
