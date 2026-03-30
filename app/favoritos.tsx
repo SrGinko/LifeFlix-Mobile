@@ -1,9 +1,8 @@
-import ButtonLink from "@/components/buttonLink";
-import CardFav from "@/components/favoritoCardComponent";
+import CardFav from "@/components/layout/favoritoCardComponent";
 import { styles } from "@/constants/styles";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
-import { ScrollView, View, Text, TouchableOpacity } from "react-native";
+import { ScrollView, Text, TouchableOpacity, View } from "react-native";
 
 export default function Favoritos() {
     return (
