@@ -1,8 +1,8 @@
-import { MenuLateral } from "@/components/menuLateralComponent";
+import { MenuLateral } from "@/components/layout/menuLateralComponent";
 import { styles } from "@/constants/styles";
 import { Ionicons } from "@expo/vector-icons";
-import { useState } from 'react'
-import { Text, View, Pressable } from "react-native";
+import { useState } from 'react';
+import { Pressable, Text, View } from "react-native";
 
 
 export default function Filmes() {
