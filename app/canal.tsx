@@ -5,7 +5,7 @@ import { WebView } from 'react-native-webview'
 import ButtonLink from "@/components/buttonLink";
 import { Ionicons } from "@expo/vector-icons";
 import { adicionarFavorito, lerFavoritos, removerFavorito } from "@/src/services/favoritos";
-import { Toast } from "@/components/toast";
+import { Toast } from "@/components/layout/toast";
 import { useState, useEffect } from "react";
 import { useKeepAwake } from 'expo-keep-awake';
 
