@@ -1,9 +1,9 @@
-import Card from "@/components/CardComponent";
-import { MenuLateral } from "@/components/menuLateralComponent";
+import Card from "@/components/layout/CardComponent";
+import { MenuLateral } from "@/components/layout/menuLateralComponent";
 import { styles } from "@/constants/styles";
 import { Ionicons } from "@expo/vector-icons";
-import { useState } from 'react'
-import { Text, View, Pressable, ScrollView } from "react-native";
+import { useState } from 'react';
+import { Pressable, ScrollView, Text, View } from "react-native";
 
 
 export default function Canais() {
