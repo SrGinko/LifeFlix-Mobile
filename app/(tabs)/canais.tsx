@@ -19,9 +19,11 @@ export default function Canais() {
                 </Pressable>
             </View>
             <View style={styles.content}>
-                <ScrollView showsVerticalScrollIndicator={false}>
-                        <Card/>
-                </ScrollView>
+                <View style={{ display: 'flex', flexDirection: 'column', gap: 20, margin: 10 }}>
+                    <ScrollView showsVerticalScrollIndicator={false}>
+                        <Card />
+                    </ScrollView>
+                </View>
             </View>
             <MenuLateral
                 visible={menuOpen}
