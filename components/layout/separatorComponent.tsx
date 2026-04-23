@@ -1,43 +1,61 @@
 import { styles } from "@/constants/styles";
 import { Ionicons } from "@expo/vector-icons";
-import { Button } from "@react-navigation/elements";
 import { router } from "expo-router";
-import { View, StyleSheet, FlatList, ScrollView, Text, TouchableOpacity } from "react-native";
+import { View, StyleSheet, ScrollView, Text, TouchableOpacity } from "react-native";
 
-export default function SeparatorComponent(props: any,) {
+export default function SeparatorComponent(props: any) {
     return (
-        <View>
-            <View style={SeparatorStyles.separatorTitle}>
-                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                    <Text style={styles.titulo}>{props.title}</Text>
-                    <TouchableOpacity
-                        onPress={() => router.push(props.onDirect)}
-                        style={{ padding: 5 }}
-                    >
-                        <Ionicons name="arrow-forward" size={23} color={"#fff"} />
-                    </TouchableOpacity>
-                </View>
+        <View style={SeparatorStyles.container}>
+            
+            <View style={SeparatorStyles.header}>
+                <Text style={SeparatorStyles.title}>{props.title}</Text>
+
+                <TouchableOpacity
+                    onPress={() => router.push(props.onDirect)}
+                    style={SeparatorStyles.button}
+                >
+                    <Ionicons name="arrow-forward" size={20} color={"#fff"} />
+                </TouchableOpacity>
             </View>
-            <ScrollView style={SeparatorStyles.separatorContainer}
+
+            <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
+                contentContainerStyle={SeparatorStyles.scrollContent}
             >
                 {props.children}
             </ScrollView>
         </View>
-    )
+    );
 }
 
 const SeparatorStyles = StyleSheet.create({
-    separatorContainer: {
-        display: 'flex',
-        flexDirection: 'row',
-        height: 200,
-        padding: 10,
+    container: {
+        backgroundColor: '#131313',
+        borderRadius: 12,
+        paddingVertical: 10,
     },
-    separatorTitle: {
-        color: '#fff',
-        padding: 10,
-    }
 
-})
+    header: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        paddingHorizontal: 12,
+        marginBottom: 5,
+    },
+
+    title: {
+        color: '#fff',
+        fontSize: 18,
+        fontWeight: '700',
+    },
+
+    button: {
+        padding: 6,
+    },
+
+    scrollContent: {
+        paddingHorizontal: 10,
+        gap: 10,
+    },
+});
