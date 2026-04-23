@@ -1,4 +1,3 @@
-import { AppRoutes } from "@/constants/routes"
 import { router, Href } from "expo-router"
 import { StyleSheet, View,Text, TouchableOpacity } from "react-native"
 
@@ -6,9 +5,9 @@ type Props = {
     style?: any
     text: string
     pagina: {
-         pathname: "/perfil" | "/home" | "/settings" | "/canal";
+         pathname: "/canal" | "/(tabs)/home" | "/home"; 
     }
-}
+}   
 
 export default function ButtonLink({style, text, pagina}: Props){
     
