@@ -15,8 +15,6 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         backgroundColor: '#0c0c0c',
         alignItems: 'center',
-        borderBottomWidth: 0.6 ,
-        borderColor: '#5c5c5c'
     },
     titulo: {
         fontSize:TextType.title.fontSize,
