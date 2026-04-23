@@ -1,10 +1,9 @@
 import { styles } from "@/constants/styles";
-import { useCanaisData } from "@/hooks/canaisData";
+import { lerFavoritos } from "@/src/services/favoritos";
+import { LinearGradient } from 'expo-linear-gradient';
 import { router } from "expo-router";
 import React, { useEffect, useState } from "react";
-import { LinearGradient } from 'expo-linear-gradient'
-import { Text, View, StyleSheet, TouchableOpacity, ImageBackground, Pressable } from "react-native";
-import { lerFavoritos } from "@/src/services/favoritos";
+import { ImageBackground, Pressable, StyleSheet, Text, View } from "react-native";
 
 type Props = {
     style?: any,
@@ -30,7 +29,7 @@ export default function CardFav({ style }: Props) {
     return (
         <View style={[{ gap: 10, flexDirection: "row", flexWrap: "wrap", }]}>
             {
-               favoritos.length > 0  ? ordenados.map((item: any) => (
+                favoritos.length > 0 ? ordenados.map((item: any) => (
                     <Pressable
                         key={item.id}
                         onFocus={() => setSelectedId(item.id)}
@@ -66,12 +65,12 @@ export default function CardFav({ style }: Props) {
                                 resizeMode="contain"
                             >
                                 <LinearGradient
-                                    colors={['transparent', 'transparent', 'transparent', '#3d3d3d']}
+                                    colors={['transparent', 'rgba(0,0,0,0.4)', 'rgba(0,0,0,0.9)']}
                                     style={[{ justifyContent: 'flex-end', alignItems: 'center', width: 110, borderRadius: 10, height: 180, padding: 5 }]}
                                 >
-                                    <Text style={styles.text}
+                                    <Text
+                                        style={[styles.text, { fontSize: 13, fontWeight: '600' }]}
                                         numberOfLines={1}
-                                        ellipsizeMode="tail"
                                     >{item.nome}</Text>
                                 </LinearGradient>
                             </ImageBackground>
@@ -97,6 +96,10 @@ const cardStyle = StyleSheet.create({
 
     focused: {
         transform: [{ scale: 1.08 }],
-    },
+        shadowColor: "#fff",
+        shadowOpacity: 0.25,
+        shadowRadius: 10,
+        elevation: 8,
+    }
 
 })
